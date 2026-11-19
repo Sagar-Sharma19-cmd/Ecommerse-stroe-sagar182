@@ -1,0 +1,78 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--sea-salt-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.12s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.imageLink {
+  display: block;
+}
+
+.imageWrap {
+  background: var(--sea-salt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  border-bottom: 1px solid var(--sea-salt-dark);
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.name {
+  font-weight: 600;
+  color: var(--denim-navy);
+  font-size: 1rem;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 4px 0 10px;
+}
+
+.addButton {
+  background: var(--kumquat);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.12s ease;
+}
+
+.addButton:hover:not(:disabled) {
+  background: var(--kumquat-dark);
+}
+
+.addButton:disabled {
+  background: var(--sea-salt-darker);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
