@@ -14,7 +14,7 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     id: "p1",
-    name: "Aurora Desk Lamp",
+    name: "Beacon Desk Lamp",
     description:
       "A dimmable LED desk lamp with a warm-white and cool-white mode, ideal for late study sessions.",
     price: 1299,

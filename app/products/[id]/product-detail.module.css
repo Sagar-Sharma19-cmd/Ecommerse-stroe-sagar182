@@ -26,9 +26,8 @@
 }
 
 .imageWrap {
-  background: var(--sea-salt);
-  border: 1px solid var(--sea-salt-dark);
-  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--denim-navy) 0%, var(--denim-navy-light) 100%);
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;

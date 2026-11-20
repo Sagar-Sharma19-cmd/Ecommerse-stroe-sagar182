@@ -4,7 +4,7 @@ import { CartProvider } from "@/components/CartProvider";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "AuroraStore - E-Commerce Demo",
+  title: "Saltline - E-Commerce Store",
   description:
     "Unit 4 EL - Project 7: E-Commerce Store (Next.js App Router, TypeScript)",
 };

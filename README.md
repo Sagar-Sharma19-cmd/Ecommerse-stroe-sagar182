@@ -1,4 +1,4 @@
-# AuroraStore - E-Commerce Store
+# Saltline - E-Commerce Store
 
 **Unit 4 EL (UQ25CA752A - WAF-II), Project 7 of 10**
 Sagar Rajkumar Sharma - PES1PG25CA182 - Section C
@@ -11,8 +11,11 @@ TypeScript, covering the assignment's three core concepts:
 2. **State Management** - `components/CartProvider.tsx`, a React
    Context + `useReducer` cart shared across the whole app.
 3. **API Integration** - `app/api/products/route.ts`, a Route Handler the
-   products page calls with `fetch`, including a `?fail=1` mode and a UI
-   toggle to demonstrate the failure/loading states for real.
+   products page calls with `fetch`, including a `?fail=1` mode and a
+   "Simulate API failure" switch (with a Try again button) to demonstrate
+   the loading/error states for real.
+
+The products page also has product search and category filters.
 
 Theme: Sea Salt (60%, backgrounds/surfaces), Denim Navy (30%, header/
 headings/structure), Kumquat Orange (10%, buttons/badges/price) - see
@@ -28,7 +31,7 @@ npm run dev
 ```
 
 Open http://localhost:3000 - it redirects you nowhere automatically, click
-**Browse Products** on the home page.
+**Shop the collection** on the home page.
 
 To build and run the production build instead:
 
@@ -40,8 +43,11 @@ npm start
 ## What to actually test (matches the assignment's checklist)
 
 - Open `/products` - products load from `/api/products`.
-- Tick **Simulate API failure** on the products page - see the real error
-  state (calls `/api/products?fail=1`, which returns a genuine 500).
+- Type in the search box / pick a category chip; search for nonsense to see
+  the no-match message.
+- Switch on **Simulate API failure** on the shop page - see the real error
+  state (calls `/api/products?fail=1`, which returns a genuine 500), then
+  press **Try again**.
 - Click any product - opens `/products/<id>`. Visit `/products/does-not-exist`
   directly to see the real Next.js not-found page.
 - Add the same product twice - quantity becomes 2, not two separate lines.
